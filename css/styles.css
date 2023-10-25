@@ -204,7 +204,14 @@ img {
   height: 100%;
   background-color: #fff;
   padding: 24px 24px 40px 16px;
-  display: none;
+  /* display: none; */
+  display: block;
+
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto; */
 }
 
 .mob-menu-list {
@@ -227,9 +234,14 @@ img {
   color: #404bbf;
 }
 
-.mob-menu-item {
+.mob-menu-item:not(:last-child) {
   margin-bottom: 40px;
 }
+
+.mob-address-list {
+  margin-bottom: 48px;
+}
+
 
 .mob-address-link {
   color: #434455;
@@ -237,11 +249,58 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  cursor: pointer;
 }
+
+.mob-address-link:hover,
+.mob-address-link:focus {
+  color: #4D5AE5;
+}
+
+
 
 .mob-address-item {
   margin-bottom: 24px;
 }
+
+.mob-list-soc {
+  display: flex;
+  justify-content: left;
+  gap: 40px;
+
+
+
+  /* margin-top: 48px; */
+}
+
+.mob-item-soc {
+  width: 40px;
+  height: 40px;
+}
+
+.mob-link-soc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #4D5AE5;
+}
+
+
+.mob-soc-icon {
+  fill: #F4F4FD;
+}
+
+
+
+
+
+
+
+
+
 
 
 
